@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Soldier & Weapon Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Military Registration System</h1>
+            <p>Soldier and Assigned Equipment Registration Form</p>
+        </div>
+
+        <form>
+
+            <!-- PERSONAL INFORMATION -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname"
+                               placeholder="Enter full name" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="service-number">Service Number</label>
+                        <input type="text" id="service-number"
+                               placeholder="e.g. MIL-2026-001" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Military Email</label>
+                        <input type="email" id="email"
+                               placeholder="example@military.com">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone"
+                               placeholder="+254 700 000 000">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age"
+                               min="18" max="70"
+                               placeholder="Enter age">
+                    </div>
+
+                </div>
+
+                <div class="input-group full-width">
+                    <label for="address">Home Address</label>
+                    <textarea id="address"
+                              placeholder="Enter full address"></textarea>
+                </div>
+
+            </fieldset>
+
+
+            <!-- SERVICE INFORMATION -->
+            <fieldset>
+                <legend>Service Information</legend>
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <label for="rank">Rank</label>
+
+                        <select id="rank">
+                            <option value="">Select Rank</option>
+                            <option>Private</option>
+                            <option>Corporal</option>
+                            <option>Sergeant</option>
+                            <option>Lieutenant</option>
+                            <option>Captain</option>
+                            <option>Major</option>
+                            <option>Colonel</option>
+                            <option>General</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="unit">Unit / Division</label>
+
+                        <select id="unit">
+                            <option value="">Select Unit</option>
+                            <option>Infantry</option>
+                            <option>Engineering</option>
+                            <option>Medical Corps</option>
+                            <option>Communications</option>
+                            <option>Logistics</option>
+                            <option>Special Operations</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="enlistment">Enlistment Date</label>
+                        <input type="date" id="enlistment">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="experience">Years of Service</label>
+                        <input type="number" id="experience"
+                               min="0"
+                               placeholder="Years">
+                    </div>
+
+                </div>
+
+                <div class="radio-section">
+
+                    <label class="section-label">
+                        Service Status
+                    </label>
+
+                    <label class="radio-label">
+                        <input type="radio" name="status" value="active">
+                        Active
+                    </label>
+
+                    <label class="radio-label">
+                        <input type="radio" name="status" value="reserve">
+                        Reserve
+                    </label>
+
+                    <label class="radio-label">
+                        <input type="radio" name="status" value="training">
+                        Training
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+
+            <!-- WEAPON / EQUIPMENT INFORMATION -->
+            <fieldset>
+                <legend>Assigned Weapon / Equipment</legend>
+
+                <div class="form-grid">
+
+                    <div class="input-group">
+                        <label for="weapon-type">Equipment Type</label>
+
+                        <select id="weapon-type">
+                            <option value="">Select Equipment</option>
+                            <option>Rifle</option>
+                            <option>Handgun</option>
+                            <option>Machine Gun</option>
+                            <option>Protective Equipment</option>
+                            <option>Communication Equipment</option>
+                            <option>Other Authorized Equipment</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="weapon-model">Model / Name</label>
+
+                        <input type="text"
+                               id="weapon-model"
+                               placeholder="Enter model name">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="serial">Serial / Asset Number</label>
+
+                        <input type="text"
+                               id="serial"
+                               placeholder="Enter serial number">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="condition">Condition</label>
+
+                        <select id="condition">
+                            <option value="">Select Condition</option>
+                            <option>Excellent</option>
+                            <option>Good</option>
+                            <option>Needs Inspection</option>
+                            <option>Under Maintenance</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="assigned-date">Assignment Date</label>
+                        <input type="date" id="assigned-date">
+                    </div>
+
+                </div>
+
+                <div class="checkbox-section">
+
+                    <label class="section-label">
+                        Additional Assigned Equipment
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Protective Vest
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Helmet
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        Radio
+                    </label>
+
+                    <label>
+                        <input type="checkbox">
+                        First Aid Kit
+                    </label>
+
+                </div>
+
+                <div class="input-group full-width">
+
+                    <label for="notes">
+                        Additional Notes
+                    </label>
+
+                    <textarea id="notes"
+                              placeholder="Enter additional authorized equipment or registration notes..."></textarea>
+
+                </div>
+
+            </fieldset>
+
+
+            <!-- DOCUMENTS -->
+            <fieldset>
+                <legend>Documents</legend>
+
+                <div class="input-group">
+
+                    <label for="photo">
+                        Upload Identification Photo
+                    </label>
+
+                    <input type="file" id="photo"
+                           accept="image/*">
+
+                </div>
+
+            </fieldset>
+
+
+            <!-- AGREEMENT -->
+            <div class="agreement">
+
+                <label>
+                    <input type="checkbox" required>
+
+                    I confirm that the information provided in this
+                    registration form is accurate and authorized.
+                </label>
+
+            </div>
+
+
+            <!-- BUTTONS -->
+            <div class="buttons">
+
+                <button type="reset" class="reset-btn">
+                    Clear Form
+                </button>
+
+                <input type="submit" class="submit-btn">
+                    Register Soldier
+            </input>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

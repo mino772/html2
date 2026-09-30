@@ -1,0 +1,441 @@
+/* =========================
+   GENERAL STYLING
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #101820,
+            #1d2b20,
+            #30422d
+        );
+
+    padding: 40px 20px;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+
+    background: rgba(255, 255, 255, 0.97);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background:
+        linear-gradient(
+            135deg,
+            #1f3a22,
+            #4d6630
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #d8e3c5;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+    padding: 35px;
+}
+
+
+/* =========================
+   FIELDSET
+========================= */
+
+fieldset {
+    border: 2px solid #d6ddcf;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    transition: 0.3s;
+}
+
+fieldset:hover {
+    border-color: #607744;
+}
+
+legend {
+    background: #314a2c;
+
+    color: white;
+
+    padding: 8px 18px;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   FORM GRID
+========================= */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.full-width {
+    margin-top: 20px;
+}
+
+
+/* =========================
+   INPUT GROUP
+========================= */
+
+.input-group {
+    display: flex;
+
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+
+    color: #26352a;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+input,
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #cbd3c5;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+
+    background: #fafcf8;
+}
+
+textarea {
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+
+/* =========================
+   FOCUS EFFECT
+========================= */
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    border-color: #607744;
+
+    background: white;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(96, 119, 68, 0.15);
+}
+
+
+/* =========================
+   RADIO BUTTONS
+========================= */
+
+.radio-section {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+    align-items: center;
+}
+
+.section-label {
+    width: 100%;
+}
+
+.radio-label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    cursor: pointer;
+
+    font-weight: normal;
+}
+
+.radio-label input {
+    width: auto;
+}
+
+
+/* =========================
+   CHECKBOXES
+========================= */
+
+.checkbox-section {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+}
+
+.checkbox-section label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    font-weight: normal;
+
+    cursor: pointer;
+}
+
+.checkbox-section input {
+    width: auto;
+}
+
+
+/* =========================
+   FILE INPUT
+========================= */
+
+input[type="file"] {
+
+    background: #eef2ea;
+
+    border: 2px dashed #8fa07a;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   AGREEMENT
+========================= */
+
+.agreement {
+
+    background: #f0f5eb;
+
+    border-left: 5px solid #5d743f;
+
+    padding: 18px;
+
+    border-radius: 8px;
+
+    margin-bottom: 30px;
+}
+
+.agreement label {
+
+    display: flex;
+
+    gap: 10px;
+
+    align-items: center;
+
+    font-weight: normal;
+
+    cursor: pointer;
+}
+
+.agreement input {
+    width: auto;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 15px;
+}
+
+button {
+
+    border: none;
+
+    padding: 14px 28px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.reset-btn {
+
+    background: #e1e5dd;
+
+    color: #333;
+}
+
+.reset-btn:hover {
+
+    background: #cbd1c5;
+
+    transform: translateY(-2px);
+}
+
+.submit-btn {
+
+    background:
+        linear-gradient(
+            135deg,
+            #314a2c,
+            #617d3f
+        );
+
+    color: white;
+
+    box-shadow:
+        0 8px 20px
+        rgba(49, 74, 44, 0.3);
+}
+
+.submit-btn:hover {
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 12px 25px
+        rgba(49, 74, 44, 0.4);
+}
+
+button:active {
+
+    transform:
+        translateY(0);
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 20px 10px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .form-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+    .buttons {
+
+        flex-direction:
+            column;
+    }
+
+    button {
+
+        width: 100%;
+    }
+
+    .header h1 {
+
+        font-size: 24px;
+    }
+
+}
